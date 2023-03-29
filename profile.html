@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APTOS JOBS BOARD</title>
+</head>
+<style>
+    body {
+        background: url('./Background.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    }
+
+    .nav-bar {
+        margin: 10px 10px;
+        display: flex;
+        
+        justify-content:space-between;
+    }
+
+    .logo-img{
+        margin: 10px 10px;
+    }
+
+    .profile-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 52px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #000000;
+    }
+
+    .application-side{
+        margin: 10px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-meta {
+        
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .profile-pic {
+        height: 150px;
+        width: 150px;
+        
+        border-radius: 15px;
+        background: gray;
+        margin: 10px 10px;
+    }
+
+    .profile-info {
+        margin: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .name {
+        padding: 0px 30px;
+        border: 1px solid green;
+        background: #263238;
+        border-radius: 25px;
+        color: white;
+    }
+
+    .name-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 32px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    .profile-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .profile-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 20px;
+    }
+
+    .profile-detail-box {
+
+        border: 1px solid #2D2D2E;
+        border-radius: 20px;
+        margin: 10px 10px;
+        padding: 10px 20px;
+        width: 1200px;
+
+    }
+
+
+    .head-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    .desc {
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 39px;
+        text-align: left;
+    }
+
+
+    @media screen and (max-width:1400px){
+        .profile-detail-box{
+            width: 1000px;
+        }
+    }
+
+
+
+    @media screen and (max-width:1200px) {
+        body {
+            background: url('./Background-for-1200.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+        }
+
+        .profile-detail-box{
+            width: 800px;
+        }
+    }
+
+    @media screen and (max-width:1000px){
+        .profile-detail-box{
+            width: 600px;
+        }
+    }
+
+    @media screen and (max-width:750px){
+        .profile-detail-box{
+            width: 500px;
+        }
+        .head-title{
+            font-size: 23px;
+            line-height: 35px;
+        }
+        .desc{
+            font-size: 18px;
+            line-height: 35px;
+        }
+
+    }
+
+    @media screen and (max-width:600px){
+        .profile-detail-box{
+            width: 400px;
+        }
+    }
+
+    @media screen and (max-width:500px){
+        body {
+        background: url('./13\ Pro\ -\ 1.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    }
+        .profile-detail-box{
+            width: 350px;
+        }
+        .profile-pic{
+            height: 120px;
+            width: 120px;
+        }
+        .name-title{
+            font-size: 18px ;
+        }
+
+    }
+
+    @media screen and (max-width:450px){
+        .profile-detail-box{
+            width: 300px;
+        }
+        .profile-pic{
+            height: 120px;
+            width: 120px;
+        }
+        .name-title{
+            font-size: 18px ;
+        }
+
+    }
+
+    @media screen and (max-width:400px){
+        .profile-detail-box{
+            width: 250px;
+        }
+        .head-title{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .desc{
+            font-size: 15px;
+            line-height: 30px;
+        }
+        .name-title{
+            font-size: 15px ;
+        }
+        .pro-logo{
+            height: 30px;
+            width: 30px;
+        }
+        .profile-pic{
+            width: 100px;
+            height: 100px;
+        }
+        .profile-title{
+            font-size: 30px;
+        }
+        .logo-img {
+        width: 45px;
+    }
+
+    }
+
+    @media screen and (max-width:340px){
+        .profile-pic{
+            width: 80px;
+            height: 80px;
+        }
+        .name-title{
+            font-size: 12px;
+        }
+        .profile-links{
+            position: relative;
+            top: 5px;
+        }
+    }
+
+    @media screen and (max-width:300px){
+        .profile-detail-box{
+            width: 200px;
+        }
+        .profile-pic{
+            width: 80px;
+            height: 80px;
+        }
+        .name{
+            padding: 0px 20px;
+        }
+        .name-title{
+            font-size: 11px;
+        }
+        .profile-links{
+            position: relative;
+            top: 5px;
+        }
+        .desc{
+            font-size: 12px;
+        }
+        .head-title{
+            font-size: 18px;
+        }
+        .profile-title{
+            font-size: 28px;
+        }
+        .pro-logo{
+            height: 28px;
+            width: 28px;
+        }
+
+    }
+
+
+</style>
+
+<body>
+    <nav class="nav-bar">
+        <img src="./logo 1.png" alt="" class="logo-img">
+        <div class="application-side">
+            <div class="name my-application">
+                <h1 class="name-title application-title">My Applications</h1>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-head">
+        <h1 class="profile-title">Profile Dashboard</h1>
+    </div>
+
+    <div class="profile-meta">
+        <div class="profile-pic">
+
+        </div>
+        <div class="profile-info">
+            <div class="name">
+                <h1 class="name-title">Utkarsh Suneela</h1>
+            </div>
+            <div class="profile-links">
+                <div class="link-1"><img src="./twitter-logo.png" alt="" class="twitter-logo pro-logo"></div>
+                <div class="link-2"><img src="./linkedin-log.png" alt="" class="linedin-logo pro-logo"></div>
+                <div class="link-3"><img src="./discord-logo-1.png" alt="" class="discord-logo pro-logo"></div>
+                <div class="link-4"><img src="./google-logo.png" alt="" class="google-logo pro-logo"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-details">
+        <div class="profile-detail-box">
+            <div class="detail-head">
+                <h1 class="head-title">Description/Bio</h1>
+            </div>
+            <div class="detail-desc">
+                <h1 class="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quod iure voluptatem perspiciatis
+                    fugit minima non ipsam sint eveniet, quia a pariatur nobis, officiis, aspernatur accusantium optio
+                    rem recusandae autem, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis nihil culpa quod doloribus reprehenderit ratione.
+                </h1>
+            </div>
+        </div>
+        <div class="profile-detail-box more-info">
+            
+                <div class="skill-head"><h1 class="skill-title head-title">Skills</h1></div>
+                <div class="skill-list">
+                    <ul class="skills desc">
+                        <li class="skill">Solidity</li>
+                        <li class="skill">JavaScript</li>
+                        <li class="skill">MongoDB</li>
+                        <li class="skill">Node.js</li>
+                    </ul>
+                </div>
+            
+            
+            
+        </div>
+        
+        
+    </div>
+
+</body>
+
+</html>

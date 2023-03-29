@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        background: url('./Background.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    }
+    .nav-bar {
+        margin: 10px 10px;
+        display: flex;
+        
+        justify-content:space-between;
+    }
+
+    .logo-img{
+        margin: 10px 10px;
+    }
+
+    .post-job-section{
+        
+        margin: 10px 10px;
+        padding: 10px 10px;
+    }
+
+    .post-job-form{
+        
+        margin: 10px 10px;
+        padding: 20px 20px;
+    }
+
+    .post-job-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 52px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #000000;
+    }
+
+    form{
+        padding: 20px 20px;
+    }
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .submit{
+        display: flex;
+        justify-content: center;
+    }
+
+    .submit-btn{
+        background: #263238;
+        border-radius: 20px;
+        font-family: 'Poppins';
+        font-size:25px;
+        color: white;
+        padding: 10px 30px;
+    }
+
+    
+    input{
+        font-family: 'Poppins';
+        font-size:25px;
+        margin: 10px 10px;
+        border-radius: 20px;
+        padding: 10px 10px;
+        border: 1px solid #263238;
+        background: transparent;
+        width: 500px;
+    }
+
+    ::-webkit-input-placeholder {
+        color:  black;
+        font-weight: 600;
+    }
+
+
+
+    @media screen and (max-width:1200px) {
+        body {
+            background: url('./Background-for-1200.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+        }
+    }
+
+    @media screen and (max-width:500px){
+        body {
+        background: url('./13\ Pro\ -\ 1.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    }
+        input{
+            width: 400px;
+        }
+    }
+
+    @media screen and (max-width:450px){
+        input{
+            width: 300px;
+            font-size: 18px;
+        }
+        .submit-btn{
+            font-size: 18px;
+        }
+        .post-job-title{
+            font-size: 28px;
+        }
+        .logo-img{
+            width: 45px;
+        }
+    }
+
+    @media screen and (max-width:350px){
+        input{
+            width: 250px;
+            font-size: 15px;
+        }
+        .submit-btn{
+            font-size: 15px;
+        }
+        .post-job-title{
+            font-size: 25px;
+        }
+        
+    }
+
+    </style>
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <img src="./logo 1.png" alt="" class="logo-img">
+        
+    </nav>
+
+    <div class="post-job-section">
+        <div class="post-job-head">
+            <h1 class="post-job-title">Post A Job</h1>
+        </div>
+
+        <div class="post-job-form">
+            <form action="" class="pj-form">
+                <div class="inputs">
+                    <div class="input"><input type="text" placeholder="Title"></div>
+                    <div class="input"><input type="text" placeholder="Role"></div>
+                    <div class="input"><input type="text" placeholder="Description"></div>
+                    <div class="input"><input type="text" placeholder="Compensation"></div>
+                    <div class="input"><input type="text" placeholder="Location"></div>
+                    
+                </div>
+                <div class="submit">
+                    <button class="submit-btn">Submit</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    
+    
+</body>
+</html>
